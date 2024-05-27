@@ -3,7 +3,10 @@ from multiprocessing import Pool
 from typing import List
 
 logging.basicConfig(
-    filename="logs/app.log", level=logging.INFO, format="%(asctime)s - %(message)s"
+    filename="logs/app.log",
+    level=logging.INFO,
+    format="%(asctime)s - %(message)s",
+    filemode="a",
 )
 
 

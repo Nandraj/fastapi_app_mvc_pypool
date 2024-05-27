@@ -5,7 +5,10 @@ from datetime import datetime, timezone
 import logging
 
 logging.basicConfig(
-    filename="logs/app.log", level=logging.INFO, format="%(asctime)s - %(message)s"
+    filename="logs/app.log",
+    level=logging.INFO,
+    format="%(asctime)s - %(message)s",
+    filemode="a",
 )
 
 api_router = APIRouter()
